@@ -391,7 +391,7 @@ var unitClauses = clauses.Where(c => c.Count == 1).ToList();
     }
     
     
-    // Fill in the solution matrix with the solved values
+    // Fill in the solution matrix with the solved values  
     foreach (var assignment in assignments.Where(a => a.Value))
     {
         SATSolver.DecodeVariable(assignment.Key, out int row, out int col, out int num);
